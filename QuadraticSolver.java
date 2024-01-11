@@ -4,10 +4,13 @@ public class QuadraticSolver{
         Scanner input = new Scanner(System.in);
         System.out.println("welcome to the Quadratic Solver!");
         System.out.println("Enter the 'a' value:");
-        int a = input.nextInt();
+        double a = input.nextDouble();
         System.out.println("Enter the 'b' value:");
-        int b = input.nextInt();
+        double b = input.nextDouble();
         System.out.println("Enter the 'c' value:");
-        int c = input.nextInt();
+        double c = input.nextDouble();
+
+        double xval1 = (-b + Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
+        double xval2 = (-b - Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
     }
 }
