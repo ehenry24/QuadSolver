@@ -10,7 +10,9 @@ public class QuadraticSolver{
         System.out.println("Enter the 'c' value:");
         double c = input.nextDouble();
 
-        double xval1 = (-b + Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
-        double xval2 = (-b - Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
+        double xval1 = (-b + Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
+        double xval2 = (-b - Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
+
+        System.out.println("X Values are:" + xval1 + "and" + xval2);
     }
 }
