@@ -13,6 +13,6 @@ public class QuadraticSolver{
         double xval1 = (-b + Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
         double xval2 = (-b - Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
 
-        System.out.println("X Values are:" + xval1 + "and" + xval2);
+        System.out.println("X Values are:" + xval1 + " and -4" + xval2);
     }
 }
