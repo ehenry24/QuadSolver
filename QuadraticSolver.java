@@ -10,9 +10,21 @@ public class QuadraticSolver{
         System.out.println("Enter the 'c' value:");
         double c = input.nextDouble();
 
-        double xval1 = (-b + Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
-        double xval2 = (-b - Math.sqrt((Math.pow(b,2))-(4*a*c)))/(2*a);
+        double xval1 = 0.0;
+        double xval2 = 0.0;
+        double discriminant = (Math.pow(b,2)-(4*a*c));
+        
+        if(discriminant > 0){
+           xval2 = ((-b - Math.sqrt(discriminant)) / (2*a));
+           xval1 = ((-b + Math.sqrt(discriminant)) / (2*a));
+           System.out.println("The solutions are:"+ xval1 +" and "+xval2);
 
-        System.out.println("X Values are:" + xval1 + " and -4" + xval2);
+        }else if (discriminant == 0){
+            xval1 = ((-b)/(2*a));
+            System.out.println("The solution is:"+xval1);
+
+        } else if (discriminant < 0){
+            System.out.println("No real solutions found :(");
+        }
     }
 }
