@@ -19,7 +19,7 @@ public class QuadraticSolver{
            xval1 = ((-b + Math.sqrt(discriminant)) / (2*a));
            System.out.println("The solutions are:"+ xval1 +" and "+xval2);
 
-        }else if (discriminant == 0){
+        } else if (discriminant == 0){
             xval1 = ((-b)/(2*a));
             System.out.println("The solution is:"+xval1);
 
